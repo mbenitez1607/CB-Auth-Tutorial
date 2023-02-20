@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { CLOUD_FUNCTIONS_ORIGIN } from './functions-origin';
 
-const apiUrl = `${CLOUD_FUNCTIONS_ORIGIN}/api`;
+const apiUrl = `http://localhost:5001/timelapse-934bd/us-central1/api`;
 
 export async function signIn({ email, password }) {
   const url = `${apiUrl}/login`;
